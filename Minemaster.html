@@ -1,0 +1,59 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh15020\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Excavator Rental Management</title>\
+    <link rel="stylesheet" href="styles.css">\
+</head>\
+<body>\
+    <header>\
+        <h1>Excavator Rental Management</h1>\
+    </header>\
+    <main>\
+        <section id="machine-status">\
+            <h2>Machine Usage Tracking</h2>\
+            <form id="usage-form">\
+                <label for="machine-id">Machine ID:</label>\
+                <input type="text" id="machine-id" name="machine-id" required>\
+                \
+                <label for="start-hours">Start Hour Meter Reading:</label>\
+                <input type="number" id="start-hours" name="start-hours" required>\
+                \
+                <label for="end-hours">End Hour Meter Reading:</label>\
+                <input type="number" id="end-hours" name="end-hours" required>\
+                \
+                <button type="submit">Submit</button>\
+            </form>\
+            <div id="usage-output"></div>\
+        </section>\
+\
+        <section id="issue-reporting">\
+            <h2>Report an Issue</h2>\
+            <form id="issue-form">\
+                <label for="issue-description">Issue Description:</label>\
+                <textarea id="issue-description" name="issue-description" required></textarea>\
+                \
+                <label for="issue-severity">Severity:</label>\
+                <select id="issue-severity" name="issue-severity">\
+                    <option value="low">Low</option>\
+                    <option value="medium">Medium</option>\
+                    <option value="high">High</option>\
+                </select>\
+                \
+                <button type="submit">Report Issue</button>\
+            </form>\
+            <div id="issue-output"></div>\
+        </section>\
+    </main>\
+    <script src="script.js"></script>\
+</body>\
+</html>\
+}
